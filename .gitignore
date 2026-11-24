@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Environments and tool caches
+.venv/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Secrets: only .env.example is versioned
+.env
+.env.*
+!.env.example
+
+# Game data and anything derived from it (game content, reproducible from raw)
+data/**
+!data/**/
+!data/**/.gitkeep
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/
+
+# Claude Code local settings
+.claude/settings.local.json
