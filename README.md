@@ -24,6 +24,15 @@ uv run pytest
 
 Pre-commit ejecuta los tres primeros en cada commit. El CI ejecuta los cuatro en cada PR.
 
+## Evaluación
+
+```bash
+uv run python -m eval.run_eval --dry-run
+uv run python -m eval.run_eval --retriever modulo:objeto --note "qué cambió"
+```
+
+El primero valida el dataset y cuenta las preguntas. El segundo mide un retriever y añade una entrada a `docs/eval-log.md`; con `--no-log` no la escribe.
+
 ## Datos del juego
 
 Los datos del juego no se distribuyen en este repositorio. Copia `en-US.json` y `es-ES.json` desde `CommunityResources/Docs/`, en la carpeta de instalación de Satisfactory, a `data/raw/`.
